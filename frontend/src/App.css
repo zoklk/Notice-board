@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.web-header {
+  background-color: #019999;
+  font-size : calc(10px + 2vmin);
+  padding : 2vh 0 0vh 1rem;
+  text-align : left;
+  font-size: 3rem;
+  color: white;
+}

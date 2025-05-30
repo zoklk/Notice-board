@@ -1,0 +1,8 @@
+.container-editposts {
+    display:flex;
+    margin-top: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 1px;
+    justify-content: center;
+}
