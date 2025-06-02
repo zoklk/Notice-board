@@ -6,6 +6,17 @@ h1 {
     text-align: center;
 }
 
+.container-viewsetting {
+    display:flex;
+    justify-content: space-between;
+    padding: 0 10% 1rem 10%;
+}
+
+.container-select {
+    display:flex;
+    justify-content: space-between;
+}
+
 .div-table {
     display: flexbox;
     align-items: center;
@@ -28,6 +39,28 @@ th {
     justify-content: space-between;
     padding : 6px 12px 0 12px;
     width : 20%;
+}
+
+.row-posts {
+    min-height: 1rem;
+}
+
+.container-boardIndex {
+    display: flex;
+    margin-top: 5px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-boardIndex {
+    font-size: 1.5rem;
+}
+
+.container-btn {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
 }
 
 .newButton {

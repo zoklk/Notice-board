@@ -16,7 +16,14 @@ const PostDetail = () => {
         setPost(found);
     }, [id]);
 
-    if (!post) return <div>로딩 중...</div>;
+    if (!post) return (
+        <div className='mainContent'>
+            <p><strong>게시글이 존재하지 않습니다.</strong></p>
+            <div className="container-editposts">
+                <a className='btn-primary' href='/board'>글 목록</a>
+            </div>
+        </div>
+    );
 
     return (
         <div className='mainContent'>
@@ -28,12 +35,25 @@ const PostDetail = () => {
                 <div className="contents-detail">{post.content}</div>
             </div>
             <div className="container-editposts">
-                <a className='btn-primary'>수정</a>
-                <a className='btn-primary'>삭제</a>
-                <a className='btn-primary'>글 목록</a>
+                <a className='btn-primary' href={'/board/edit/'+id}>수정</a>
+                <DeleteButton>삭제</DeleteButton>
+                <a className='btn-primary' href='/board/1'>글 목록</a>
             </div>
         </div>
     );
 };
+
+const DeleteButton = (props) => {
+    const handleDelete = (e) => {
+        e.preventDefault();
+        const inputDelete = window.confirm('삭제하시겠습니까?');
+        if(inputDelete) alert('게시글이 삭제되었습니다.');
+    }
+    return (
+        <div className='btn-primary'>
+            <a href='#' onClick={handleDelete} style={{color:'white'}}>{props.children}</a>
+        </div>
+    )
+}
 
 export default PostDetail;

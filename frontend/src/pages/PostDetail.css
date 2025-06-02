@@ -1,3 +1,7 @@
+.btn-delete {
+    text-decoration-color: white;
+}
+
 .container-editposts {
     display:flex;
     margin-top: 15px;
