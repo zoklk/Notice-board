@@ -5,9 +5,12 @@ import './Nav.css';
 const Nav = () => {
     return (
         <nav className='headerNav'>
-            <Link to="/">HOME</Link>
-            <Link to="/board">BOARD</Link>
-            <Link to="/login">LOGIN</Link>
+            <h1 id='title-header'>Notice Board System</h1>
+            <div id='container-btn-header'>
+                <div className='btn-header'><Link to="/">HOME</Link></div>
+                <div className='btn-header'><Link to="/board/1">BOARD</Link></div>
+                <div className='btn-header'><Link to="/login">LOGIN</Link></div>
+            </div>
         </nav>
     );
 };

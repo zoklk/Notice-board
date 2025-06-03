@@ -1,5 +1,34 @@
 .headerNav {
-    background-color: aquamarine;
+    display: flex;
+    max-height: 10vh;
+    background-color: #7fffd4;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#title-header {
+    display: flex;
+    max-width: 80%;
+    min-width: 50%;
+    font-size: 4rem;
+    color: white; 
+    margin: 0;
+}
+
+#container-btn-header {
+    display:flex;
+    width: 20%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding-bottom: 0.25rem;
+    align-items: flex-end;
+}
+
+.btn-header {
+    text-align:center;
+    width: 5rem;
+    font-size: 1.5rem;
 }
 
 Link {

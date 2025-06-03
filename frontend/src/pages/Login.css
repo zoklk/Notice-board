@@ -1,16 +1,30 @@
 .main-login {
-    width: 40%;
-    height: 80%;
+    display: flex;
+    width: 60%;
+    min-width: 250px;
+    height: 60%;
     margin: auto auto;
     margin-top: 20vh;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     border-radius: 25px;
     background-color: rgb(219, 219, 219);
     justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    width: 75%;
+    max-width: 350px;
+}
+.container-userinfo {
+    display: flexbox;
+    min-width: 250px;
+    justify-content: center;
+    text-align: center;
 }
 
 .input-username, .input-password {
-    width: 100%;
+    width: 90%;
     height: 2rem;
 }
 
