@@ -4,6 +4,8 @@ import lombok.*;
 
 import jakarta.persistence.*;
 
+import java.sql.Timestamp;
+
 @Entity
 @Table(name = "recent_views",
        uniqueConstraints = @UniqueConstraint(columnNames = {"user_id", "post_id"}))
